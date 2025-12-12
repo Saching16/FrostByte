@@ -1,6 +1,6 @@
 ## 2. `ARCHITECTURE.md`
 
-```markdown
+markdown
 # Architecture Overview
 # Architecture Overview
 
