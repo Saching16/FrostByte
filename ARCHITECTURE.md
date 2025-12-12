@@ -9,6 +9,7 @@ Below is a high-level overview of the Healthy Budget Chef agent architecture.
 ## System Diagram
 
 ![Architecture](images/FrostByte_Architecture_Diagram.png)
+![Folder Layout Diagram](images/folder-githb.png)
 
 ## Components
 
