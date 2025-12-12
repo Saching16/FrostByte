@@ -1,15 +1,14 @@
 ## 2. `ARCHITECTURE.md`
 
-markdown
-# Architecture Overview
-# Architecture Overview
+
+## Architecture Overview
 
 Below is a high-level overview of the Healthy Budget Chef agent architecture.
 
 ## System Diagram
 
 ![Architecture](images/FrostByte_Architecture_Diagram.png)
-![Folder Layout Diagram](images/folder-githb.png)
+
 
 ## Components
 
