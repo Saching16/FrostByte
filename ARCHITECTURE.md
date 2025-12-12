@@ -8,52 +8,7 @@ Below is a high-level overview of the Healthy Budget Chef agent architecture.
 
 ## System Diagram
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                  USER INTERFACE                         │
-│              (Google Colab Notebook)                    │
-│   - Image upload widget                                 │
-│   - Text input for constraints                          │
-│   - HTML recipe cards display                           │
-│   - Interactive selection                               │
-└────────────────┬────────────────────────────────────────┘
-                 │
-                 ▼
-┌─────────────────────────────────────────────────────────┐
-│                   AGENT CORE                            │
-│                                                         │
-│  ┌──────────────────────────────────────────────────┐   │
-│  │  PLANNER (Gemini 2.5 Flash)                      │   │
-│  │  - Parse user constraints                        │   │
-│  │  - Determine recipe generation strategy          │   │
-│  │  - Plan 3 diverse options                        │   │
-│  └─────────────────┬────────────────────────────────┘   │
-│                    │                                    │
-│  ┌─────────────────▼────────────────────────────────┐   │
-│  │  EXECUTOR                                        │   │
-│  │  Step 1: Vision analysis (multimodal prompt)     │   │
-│  │  Step 2: Recipe generation (structured JSON)     │   │
-│  │  Step 3: User selection handling                 │   │
-│  │  Step 4: Full recipe display                     │   │
-│  └─────────────────┬────────────────────────────────┘   │
-│                    │                                    │
-│  ┌─────────────────▼────────────────────────────────┐   │
-│  │  MEMORY (Session-based)                          │   │
-│  │  - uploaded_image: PIL Image                     │   │
-│  │  - detected_ingredients: String                  │   │
-│  │  - generated_recipes: List[Dict]                 │   │
-│  │  - selected_recipe: Dict                         │   │
-│  └──────────────────────────────────────────────────┘   │
-└────────────────┬────────────────────────────────────────┘
-                 │
-                 ▼
-┌─────────────────────────────────────────────────────────┐
-│              TOOLS / APIs                               │
-│  - Gemini API (vision + generation)                     │
-│  - Unsplash Source API (recipe images)                  │
-│  - (Future) Google Search (price lookup)                │
-└─────────────────────────────────────────────────────────┘
-```
+
 
 ## Components
 
