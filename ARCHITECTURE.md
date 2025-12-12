@@ -3,7 +3,7 @@
 
 ## Architecture Overview
 
-Below is a high-level overview of the Healthy Budget Chef agent architecture.
+Below is a high-level overview of the FrostByte architecture.
 
 ## System Diagram
 
